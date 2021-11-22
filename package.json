@@ -1,9 +1,15 @@
 {
   "name": "angular-hosted-login-box",
   "version": "0.0.0",
+  "author": {
+    "name": "Frontegg",
+    "email": "hello@frontegg.com",
+    "url": "https://frontegg.com"
+  },
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 3000",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,6 +24,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@frontegg/angular": "^3.3.0-alpha.1490679057",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
