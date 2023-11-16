@@ -1,6 +1,5 @@
 <div *ngIf="!isLoading">
   <div *ngIf="user">
-    <img src={{user?.profilePictureUrl}} alt={{user?.name}} />
     <div>User name: {{user?.name}}</div>
   </div>
   <div *ngIf="!user">

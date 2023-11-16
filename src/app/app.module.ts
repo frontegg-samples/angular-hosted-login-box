@@ -4,9 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { FronteggAppModule, FronteggComponent } from '@frontegg/angular';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DashboardComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -16,8 +17,11 @@ import { FronteggAppModule, FronteggComponent } from '@frontegg/angular';
     FronteggAppModule.forRoot(
       {
         contextOptions: {
-          baseUrl: 'https://samples-demo.frontegg.com',
-          clientId: '2e53360e-517e-4c38-a040-ba0e8639f2c7'
+          baseUrl: 'https://auth.loudapi.com',
+          clientId: '93447df4-edcc-45e5-8664-9fb8c196cf44',
+        },
+        authOptions: {
+          disableSilentRefresh: true,
         },
         hostedLoginBox: true,
       }
