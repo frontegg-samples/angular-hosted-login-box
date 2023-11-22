@@ -1,0 +1,12 @@
+<div *ngIf="user">
+    <h2>Welcome {{user.name}}</h2>
+    <button (click)="logOut()">Logout</button>
+</div>
+<div *ngIf="!user">
+    <button (click)="loginWithRedirect()">Login with redirect</button>
+</div>
+<br/>
+<br/>
+
+<a routerLink="/dashboard"><b>Go to dashboard</b></a>
+
