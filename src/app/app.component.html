@@ -1,9 +1,8 @@
-<div *ngIf="!isLoading">
-  <div *ngIf="user">
-    <div>User name: {{user?.name}}</div>
-  </div>
-  <div *ngIf="!user">
-    <button (click)="loginWithRedirect()">Login with redirect</button>
-  </div>
+<!-- File: app.component.html -->
 
+
+<div *ngIf="isLoading">
+  <h1>Loading...</h1>
 </div>
+<router-outlet></router-outlet>
+

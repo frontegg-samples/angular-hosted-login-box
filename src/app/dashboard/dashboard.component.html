@@ -1,1 +1,14 @@
-<p>dashboard works!</p>
+<div *ngIf="user">
+    <div>User name: {{ user?.name }}</div>
+    <button (click)="loginToTenant1()">Login to Roy Daniel Account</button>
+    <button (click)="loginToTenant2()">Login to TenantC</button>
+
+    <div>tenantId:</div>
+    <div>{{ user?.tenantId }}</div>
+    <div>JWT:</div>
+    <div>{{ user?.accessToken }}</div>
+    <button (click)="logOut()">Log out</button>
+</div>
+<div *ngIf="!user">
+    <button (click)="loginWithRedirect()">Login with redirect</button>
+</div>
